@@ -31,7 +31,7 @@ class LightBulb(SmartDevice): #pass in SmartDevice so we can inherit
     #overrides the json method in SmartDevice
     def to_json(self): 
         #need to first convert it to a dictionary so that we can use it in dumps function
-        dict= {'name': self.__name, 'manufacturer': self.__manufacturer, 'brightness': self.__brightness}
+        dict= {'name': self._SmartDevice__name, 'manufacturer':self._SmartDevice__manufacturer, 'brightness': self._LightBulb__brightness}
         return json.dumps(dict)
     
     def get_brightness(self):
