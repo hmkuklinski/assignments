@@ -5,13 +5,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, intial-scale=1.0">
         <title>Home Devices Page </title>
-        <link rel="stylesheet" href="">
     </head>
     <body>
-        <h1>Home Address: {{home.address}}</h1>
+        <h1>Home Address: {{home.get_address()}}</h1>
         <h2>Smart Devices: </h2>
-        {% for device in home.smart_devices%}
-            <li>Name: {{device.name}}, Manufacturer: {{device.manufacturer}}, Brightness: {{device.brightness}}
+        <ul>
+        {% for device in home.get_devices()%}
+            <li>Name: {{device.get_name()}}, Manufacturer: {{device.get_manufacturer()}}, Brightness: {{device.get_brightness()}}</li>
         {%endfor%}
+        </ul>
     </body>
 </html>
