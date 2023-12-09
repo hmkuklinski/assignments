@@ -39,6 +39,9 @@ def add_lightbulb():
     
     with open('light.json', 'w') as file:
         json.dump(light_bulbs, file)
+    
+    #need a return statement!!
+    return "Light Bulb is successfully added!"
         
    
 
