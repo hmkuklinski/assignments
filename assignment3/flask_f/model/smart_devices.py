@@ -23,7 +23,7 @@ class SmartDevice(ABC): #ABC- abstract Base Case
     def set_manufacturer(self, maker):
         self.__manufacturer = maker
 
-class LighBulb(SmartDevice): #pass in SmartDevice so we can inherit
+class LightBulb(SmartDevice): #pass in SmartDevice so we can inherit
     def __init__(self, name, maker, brightness ):
         super().__init__(name, maker) #calls the super init method to initialize (use same attributes)
         self.__brightness= brightness #we want to add our own variable not in super class
