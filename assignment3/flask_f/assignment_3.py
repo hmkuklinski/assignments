@@ -15,11 +15,11 @@ def index():
     with open('light.json', 'r') as file: #will automatically close if we call it this way
         lb_data= json.load(file) #light bulb data from file
         for light in lb_data: #iterate through light bulbs in json 
-            light_bulb= LightBulb(light['name'], light['manufacturer', light['brightness']]) 
+            light_bulb= LightBulb(light['name'], light['manufacturer'], light['brightness']) 
             home.add_device(light_bulb) #add new device to home object
     return render_template('home.html', home=home) #want to display home.html, want home arguments to be passed in home template
 
-@app.route("/add_lighbulb", methods=["POST"])
+@app.route("/add_lightbulb", methods=["POST"])
 def add_lightbulb():
     #need to first get the json data and store in variable
     data= request.json
