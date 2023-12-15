@@ -1,0 +1,31 @@
+{%extends "template.html" %}
+{% block body %}
+<h2>Your Flashcards</h2>
+<form action="/add_flashcard" method="post">
+    <input autocomplete="off" autofocus name="english" placeholder="Enter English Word">
+    <button type="submit">Add Flashcard</button>
+</form>
+
+<table>
+    <thead>
+        <tr>
+            <th>English</th>
+            <th>Korean</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for eng_word, translation in flashcards.items() %}
+            <tr>
+                <td> {{eng_word}}</td>
+                <td>{{translation}}</td>
+                <td>
+                    <form action="/remove" method="post">
+                    <input type="hidden" name="word" value="{{eng_word}}">
+                    <button type="submit">Remove</button>
+                </td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

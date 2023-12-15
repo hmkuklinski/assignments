@@ -1,0 +1,20 @@
+{%extends "template.html"%}
+{%block body%}
+<table>
+    <thead>
+        <tr>
+            <th>English</th>
+            <th>Korean</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for eng_word, translation in flashcards.items() %}
+            <tr>
+                <td> {{eng_word}}</td>
+                <td>{{translation}}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{%endblock%}
