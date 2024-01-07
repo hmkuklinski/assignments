@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+    font-weight: 550;
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    padding: 8px;
+}
+
+.new-card{ /* ------ holds the add new flashcard box ------ */
+    padding: 10px;
+    margin: 5px 15px;
+    height: auto;
+    width: 90%;
+   
+    border-radius: 12px;
+}
+.new-card h2{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.title{
+    padding: 5px;
+    margin: 5px;
+}
+
+.card-form{
+    width: 100%;
+}
+
+.form-container{
+    flex: 1;
+}
+
+.form-container input{ /* text box for adding flashcard*/
+    width: 70%;
+    height: 40px;
+    font-size: 20px;
+    text-align:center;
+    flex:1;
+    border-radius: 12px;
+    margin: 10px;
+}
+.form-container button{ /*submit button for form*/
+    width: 15%;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    font-size: 20px;
+    margin: 10px;
+    background-color: rgba(93, 255, 29, 0.8);
+    color: white;
+}
+
+.flashcard-table{
+    width: 90%;
+}
+
+table{
+    border-collapse:collapse;
+    width: 90%;
+}
+
+th{
+    font-weight: 660;
+    font-size: 24px;
+    padding: 8px;
+    text-align:center;
+}
+
+td{
+    padding: 15px;
+    text-align:center;
+}
+
+
+.remove-btn-flash{
+    position:absolute;
+    top:0;
+    right: 0;
+    width: 50px;
+    border:none;
+    font-size: 32px;
+    padding: 8px 5px;
+    background-color:yellow;
+    color: black;
+    cursor:pointer;
+}
+.remove-btn{
+    border-radius: 12px;
+    width: 150px;
+    border: 1px solid black;
+    padding: 7px;
+    background-color: rgba(255, 0, 0, 0.9);
+    color: white; 
+}
+
+/* ------ the flashcards themselves!! ------*/
+.flashcard-display{
+    background-color: rgba(243, 243, 243, 0.808);
+    width: 90%;
+    height:auto;
+    display:flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    font-size: 35px;
+    margin-top: 25px;
+}
+
+.flashcard-body{
+    position:relative;
+    width: auto;
+    min-width: 200px;
+    height: auto;
+    min-height: 200px;
+    background-color: yellow;
+    border-bottom-right-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin: 15px;
+    padding: 10px 20px;
+}
+
+.flashcard{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}

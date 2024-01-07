@@ -1,31 +1,35 @@
 {%extends "template.html" %}
 {% block body %}
-<h2>Your Flashcards</h2>
-<form action="/add_flashcard" method="post">
-    <input autocomplete="off" autofocus name="english" placeholder="Enter English Word">
-    <button type="submit">Add Flashcard</button>
-</form>
-
-<table>
-    <thead>
-        <tr>
-            <th>English</th>
-            <th>Korean</th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
+<div class="container">
+    <div class="new-card">
+        <div class="title">
+            <h2>Add A New Flashcard</h2>
+        </div>
+        <div class="card-form">
+            <form action="/add_flashcard" method="post">
+                <div class="form-container">
+                    <input autocomplete="off" autofocus name="english" placeholder="Enter English Word">
+                    <button type="submit">Add</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="flashcard-display">
         {% for eng_word, translation in flashcards.items() %}
-            <tr>
-                <td> {{eng_word}}</td>
-                <td>{{translation}}</td>
-                <td>
-                    <form action="/remove" method="post">
-                    <input type="hidden" name="word" value="{{eng_word}}">
-                    <button type="submit">Remove</button>
-                </td>
-            </tr>
+        <div class="flashcard-body">
+            <div class="remove-flashcard">
+                <form action="/remove" method="post">
+                    <input type="hidden" name="word" value="{{ eng_word }}">
+                    <button type="submit" class="remove-btn-flash">x</button>
+                </form>
+            </div>
+            <div class="flashcard front">{{eng_word}}</div>
+            <div class="flashcard back">{{translation}}</div>
+            
+        </div>
         {% endfor %}
-    </tbody>
-</table>
+    </div>
+
+    
+</div>
 {% endblock %}
