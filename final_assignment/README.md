@@ -12,14 +12,16 @@
 
 Learning a new language has never been easier with the Flashcard Frenzy Application! This application generates flashcards based on the user's desired target language, organizes flashcards according to user selections, and allows users to view all of their flashcards in one window!
 
+Each flashcard will display the word's target translation on the front. Each card is color coded based on the target language. 
+
 # Usage 
 ## Creating a New Flashcard:
 Simply select your target language from one of the drop down languages, type the word in English that you'd like to translate, add a category for the sorting function, and click add.
 
 Once the flashcard is created you will be able to view all of your flashcards in your flashcard set window.
 
-## Flashcard Information:
-Each flashcard will display the word's target translation on the front. Each card is color coded based on the target language. If you would like to review what the word means in English, simply click on the card. After you have viewed the meaning, simply click the card again to display the target language.
+## Studying your Flashcards:
+If you would like to review what the word means in English, simply click on the card. After you have viewed the meaning, simply click the card again to display the target language.
 
 ## Filtering your Flashcards:
 
