@@ -41,7 +41,7 @@ If you would like to clear the filter, you can hit the red reset button.
 Made a mistake when creating a flashcard or feel as though you no longer need a flashcard? Simply click the X located on the top right corner of every flashcard.
 
 
-# To Do
+# ToDo
 1. Create a log in option that stores user's flashcards set
 2. Create a quiz function that allows users to test their skills
 3. Add additional native language options besides english
