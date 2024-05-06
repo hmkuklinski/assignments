@@ -9,7 +9,7 @@
 3. [Future Improvements](#ToDo)
 
 
-
+# Description
 Learning a new language has never been easier with the Flashcard Frenzy Application! This application generates flashcards based on the user's desired target language, organizes flashcards according to user selections, and allows users to view all of their flashcards in one window!
 
 Each flashcard will display the word's target translation on the front. Each card is color coded based on the target language. 
@@ -41,7 +41,7 @@ If you would like to clear the filter, you can hit the red reset button.
 Made a mistake when creating a flashcard or feel as though you no longer need a flashcard? Simply click the X located on the top right corner of every flashcard.
 
 
-# To Do:
+# To Do
 1. Create a log in option that stores user's flashcards set
 2. Create a quiz function that allows users to test their skills
 3. Add additional native language options besides english
